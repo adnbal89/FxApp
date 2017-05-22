@@ -19,4 +19,9 @@
   <string name="exception_message_generic">There was an application error</string>
   <string name="exception_message_no_connection">There is no internet connection</string>
   <string name="exception_message_user_not_found">Cannot retrieve user data. Check your internet connection</string>
+
+  <string name="login">LogIn</string>
+
+  <string name="auth0_client_id">WcUEJsWpXMI0qwJ5DTXGER7HBNDemgUo</string>
+  <string name="auth0_domain">adnbal89.eu.auth0.com</string>
 </resources>

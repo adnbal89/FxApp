@@ -72,6 +72,11 @@ dependencies {
   compile presentationDependencies.rxJava
   compile presentationDependencies.rxAndroid
   provided presentationDependencies.javaxAnnotation
+  //added by Adnan
+  compile presentationDependencies.appCompat
+  compile presentationDependencies.percentRelativeLayout
+  compile presentationDependencies.auth0Lock
+
 
   androidTestCompile presentationTestDependencies.mockito
   androidTestCompile presentationTestDependencies.dexmaker

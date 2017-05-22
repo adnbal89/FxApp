@@ -1,35 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fernandocejas.android10.sample.presentation">
+  package="com.adnanbal.fxdedektifi.sample.presentation">
 
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
   <application
-      android:allowBackup="true"
-      android:name=".AndroidApplication"
-      android:icon="@drawable/ic_launcher"
-      android:label="@string/app_name"
-      android:theme="@style/AppTheme">
+    android:allowBackup="true"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name"
+    android:name="com.adnanbal.fxdedektifi.sample.presentation.AndroidApplication"
+    android:theme="@style/AppTheme">
 
     <activity
-        android:name=".view.activity.MainActivity"
-        android:label="@string/app_name">
+      android:label="@string/app_name"
+      android:name="com.adnanbal.fxdedektifi.sample.presentation.view.activity.MainActivity">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
 
     <activity
-        android:name=".view.activity.UserListActivity"
-        android:label="@string/activity_title_user_list">
+      android:label="@string/activity_title_user_list"
+      android:name="com.adnanbal.fxdedektifi.sample.presentation.view.activity.UserListActivity">
     </activity>
 
     <activity
-        android:name=".view.activity.UserDetailsActivity"
-        android:label="@string/activity_title_user_details">
+      android:label="@string/activity_title_user_details"
+      android:name="com.adnanbal.fxdedektifi.sample.presentation.view.activity.UserDetailsActivity">
     </activity>
+    <activity
+      android:label="@string/login"
+      android:name="com.adnanbal.fxdedektifi.sample.presentation.view.activity.LoginActivity">
+    </activity>
+
+    <activity
+      android:label="@string/app_name"
+      android:launchMode="singleTask"
+      android:name="com.auth0.android.lock.LockActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/MyCustomLogInTheme"
+      >
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data
+          android:host="@string/auth0_domain"
+          android:pathPrefix="/android/com.adnanbal.android10.sample.presentation/callback"
+          android:scheme="https"/>
+      </intent-filter>
+    </activity>
+
+
   </application>
 
 </manifest>

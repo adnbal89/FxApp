@@ -14,13 +14,14 @@ buildscript {
 
 allprojects {
   ext {
-    androidApplicationId = 'com.fernanependocejas.android10.sample.presentation'
+    androidApplicationId = 'com.adnanbal.fxdedektifi.sample.presentation'
     androidVersionCode = 1
     androidVersionName = "1.0"
     testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
-    testApplicationId = 'com.fernandocejas.android10.sample.presentation.test'
+    testApplicationId = 'com.adnanbal.fxdedektifi.sample.presentation.test'
   }
 }
+
 
 task runDomainUnitTests(dependsOn: [':domain:test']) {
   description 'Run unit tests for the domain layer.'
